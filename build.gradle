@@ -1,0 +1,33 @@
+buildscript {
+	ext {
+		springBootVersion = '2.1.1.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 11
+targetCompatibility = 11
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile "org.springframework.boot:spring-boot-starter-web"
+	compile "com.linecorp.bot:line-bot-spring-boot:2.1.0"
+	compile "com.ibm.watson.developer_cloud:java-sdk:6.7.0"
+	compileOnly "org.projectlombok:lombok"
+	testCompile "org.springframework.boot:spring-boot-starter-test"
+}
