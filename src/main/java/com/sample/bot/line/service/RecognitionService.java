@@ -50,7 +50,7 @@ public class RecognitionService {
 
         String res = "";
         for (ClassResult cls: classes) {
-            res += cls.getXClass() + ": " + Math.round(cls.getScore()) + "%" + System.getProperty("line.separator");
+            res += cls.getXClass() + ": " + Math.round(cls.getScore() * 100.0) + "%" + System.getProperty("line.separator");
         }
         return res;
     }
