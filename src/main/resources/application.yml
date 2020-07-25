@@ -5,3 +5,4 @@ line:
 
 ibm:
   apiKey: ${IBM_API_KEY}
+  url: ${IBM_URL}

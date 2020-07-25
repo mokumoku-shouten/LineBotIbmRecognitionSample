@@ -27,7 +27,7 @@ repositories {
 dependencies {
 	compile "org.springframework.boot:spring-boot-starter-web"
 	compile "com.linecorp.bot:line-bot-spring-boot:2.1.0"
-	compile "com.ibm.watson.developer_cloud:java-sdk:6.7.0"
+	compile "com.ibm.watson:ibm-watson:8.5.0"
 	compileOnly "org.projectlombok:lombok"
 	testCompile "org.springframework.boot:spring-boot-starter-test"
 }
