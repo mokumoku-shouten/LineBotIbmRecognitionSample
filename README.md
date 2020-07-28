@@ -1,5 +1,5 @@
 # LineBotIbmRecognitionSample
-LINEから画像を送信し、IBM Watson Recognitionの物体検出結果を返すプログラムです。
+LINEから画像を送信すると、IBM Watson Recognitionの物体検出結果が返ってくるプログラムです。
 
 # Description
 ![Screenshot](line-bot-ibm-recognition.png)
